@@ -11,7 +11,7 @@ IS_WINDOWS = platform.system() == "Windows"
 load_dotenv()
 app = typer.Typer()
 
-API_URL = "https://api.openai.com/v1/chat/completions"
+API_URL = "https://api-inference.huggingface.co/models/codellama/CodeLlama-7b-hf"
 HEADERS = {"Authorization": f"Bearer {os.getenv('HF_API_KEY')}"}
 BLOCKED_COMMANDS = ["rm -rf", "format"]
 
